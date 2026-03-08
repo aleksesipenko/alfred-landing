@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как это работает — Alfred</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f1115; }
+        .subtitle { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0f1115; }
+        h3 { font-size: 1.2rem; margin: 20px 0 10px; color: #0f1115; }
+        p { margin-bottom: 15px; }
+        .step { background: #fff; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #eee; position: relative; }
+        .step-num { position: absolute; top: -12px; left: 20px; background: #0f1115; color: white; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; font-size: 0.9rem; }
+        .highlight { background: linear-gradient(135deg, #0f1115 0%, #2d3436 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; }
+        .highlight p { color: #fff; font-size: 1.2rem; margin: 0; }
+        ul { margin: 15px 0 15px 20px; }
+        li { margin: 8px 0; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.9rem; }
+        nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 30px; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #0f1115; }
+        nav a.active { color: #0f1115; border-bottom: 2px solid #0f1115; }
+        .what { background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #2196f3; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/demo.html">Демо</a></li>
+            <li><a href="/objections.html">Возражения</a></li>
+            <li><a href="/follow-up.html">Контакт</a></li>
+            <li><a href="/how-it-works.html" class="active">Как это работает</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Как это работает</h1>
+        <p class="subtitle">Техническая сторона — просто и понятно</p>
+
+        <h2>Что такое Alfred</h2>
+        <p>Alfred — это AI-ассистент, который помогает юристу быстрее справляться с рутинными задачами:</p>
+        <ul>
+            <li>готовит черновики юридических документов</li>
+            <li>помогает разобрать присланные материалы</li>
+            <li>собирает первичную структуру документа за минуты</li>
+            <li>экономит время на поиске формулировок</li>
+        </ul>
+
+        <div class="what">
+            <strong>Важно:</strong> Alfred не заменяет юриста. Он помогает быстрее собрать черновик, который затем проверяет и правит специалист.
+        </div>
+
+        <h2>Как происходит работа</h2>
+
+        <div class="step">
+            <span class="step-num">1</span>
+            <h3>Вы отправляете задачу</h3>
+            <p>Описываете, какой документ нужен, и прикрепляете материалы:</p>
+            <ul>
+                <li>описание задачи (кратко)</li>
+                <li>материалы дела / документы</li>
+                <li>тип нужного результата</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-num">2</span>
+            <h3>Alfred готовит черновик</h3>
+            <p>За минуты система собирает:</p>
+            <ul>
+                <li>структуру документа</li>
+                <li>базовые формулировки</li>
+                <li>первую версию текста</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-num">3</span>
+            <h3>Вы проверяете и правите</h3>
+            <p>Получаете готовый черновик и:</p>
+            <ul>
+                <li>проверяете на ошибки</li>
+                <li>добавляете экспертные правки</li>
+                <li>доводите под конкретное дело</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-num">4</span>
+            <h3>Готово к использованию</h3>
+            <p>Финальный документ отправляется по назначению. При этом вы потратили меньше времени на рутину и больше — на суть.</p>
+        </div>
+
+        <h2>Что Alfred умеет</h2>
+        <ul>
+            <li><strong>Исковые заявления</strong> — первая версия за минуты</li>
+            <li><strong>Жалобы</strong> — апелляционные, кассационные, административные</li>
+            <li><strong>Претензии</strong> — досудебное урегулирование</li>
+            <li><strong>Ходатайства</strong> — процессуальные документы</li>
+            <li><strong>Разбор материалов</strong> — выделение сути из больших документов</li>
+        </ul>
+
+        <h2>Что Alfred НЕ делает</h2>
+        <ul>
+            <li>✗ Не отправляет документы в суд самостоятельно</li>
+            <li>✗ Не даёт юридических консультаций</li>
+            <li>✗ Не заменяет экспертное мнение юриста</li>
+            <li>✗ Не работает без проверки специалиста</li>
+        </ul>
+
+        <h2>Безопасность</h2>
+        <p>Alfred — это инструмент для ускорения работы, а не автопилот:</p>
+        <ul>
+            <li>Все документы проходят через проверку юриста</li>
+            <li>Система не имеет доступа к судебным системам</li>
+            <li>Данные остаются под контролем специалиста</li>
+            <li>Ответственность за финальный документ — у юриста</li>
+        </ul>
+
+        <h2>Главная ценность</h2>
+        <div class="highlight">
+            <p>Вы тратите меньше времени на механическую работу и больше — на то, что требует экспертизы: стратегию, проверку и профессиональное суждение.</p>
+        </div>
+
+        <h2>Следующий шаг</h2>
+        <p>Самый честный способ понять, нужен ли вам Alfred — попробовать на одном реальном кейсе:</p>
+        <p style="font-size: 1.1rem; font-weight: 500;">Возьмите типовой документ из вашей практики и посмотрите, сколько времени Alfred сэкономит на первой версии.</p>
+
+        <div class="footer">
+            <p>Alfred — проект Chronos</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо — Alfred</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f1115; }
+        .subtitle { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0f1115; }
+        h3 { font-size: 1.2rem; margin: 20px 0 10px; color: #0f1115; }
+        p { margin-bottom: 15px; }
+        .step { background: #fff; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #eee; }
+        .step-num { display: inline-block; background: #0f1115; color: white; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px; font-weight: bold; }
+        .highlight { background: linear-gradient(135deg, #0f1115 0%, #2d3436 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; }
+        .highlight p { color: #fff; font-size: 1.2rem; margin: 0; }
+        .anti { background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .anti strong { color: #856404; }
+        ul { margin: 15px 0 15px 20px; }
+        li { margin: 8px 0; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.9rem; }
+        nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 30px; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #0f1115; }
+        nav a.active { color: #0f1115; border-bottom: 2px solid #0f1115; }
+        .cta { background: #0f1115; color: white; padding: 20px 30px; border-radius: 8px; text-align: center; margin: 40px 0; }
+        .cta p { margin: 0; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/demo.html" class="active">Демо</a></li>
+            <li><a href="/objections.html">Возражения</a></li>
+            <li><a href="/follow-up.html">Контакт</a></li>
+            <li><a href="/how-it-works.html">Как это работает</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Демо</h1>
+        <p class="subtitle">Как проходит показ Alfred на реальном кейсе</p>
+
+        <div class="highlight">
+            <p>После демо человек должен вынести: «Alfred не заменяет меня как юриста, но может резко ускорить первую версию документа и сэкономить часы рутины».</p>
+        </div>
+
+        <h2>Структура демо — 5–7 минут</h2>
+
+        <div class="step">
+            <h3><span class="step-num">0</span> Opening — 20–30 секунд</h3>
+            <p>Сразу обозначить правильную рамку:</p>
+            <p><em>«Я не показываю замену юриста. Я показываю инструмент, который помогает быстрее собрать первую рабочую версию документа и срезать рутину. Всё, что критично, остаётся на проверке у специалиста.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">1</span> Зафиксировать боль — 30–45 секунд</h3>
+            <p><em>«Обычно сколько у вас уходит на первую версию такого документа руками? Часов 4–7, плюс сбор формулировок, структура, вычитка?»</em></p>
+            <p>После ответа:</p>
+            <p><em>«Вот это и есть зона, где Alfred полезен. Не вместо вас, а чтобы первая итерация появлялась быстрее.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">2</span> Показать вход — 45–60 секунд</h3>
+            <p>Показать, что именно подаётся в Alfred:</p>
+            <ul>
+                <li>краткое описание задачи</li>
+                <li>материалы / документ / вводные</li>
+                <li>желаемый тип результата</li>
+            </ul>
+            <p><em>«Мы не просим „напиши что-нибудь умное". Мы даём конкретную задачу: вот материалы, вот цель, вот какой нужен черновик.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">3</span> Показать результат — 1.5–2 минуты</h3>
+            <p><em>«Вот первая версия. На этом этапе я смотрю не на идеальность, а на то, насколько быстро появился каркас: структура, основные блоки, стартовая формулировка, понятная база для доработки.»</em></p>
+            <p>Приземлить:</p>
+            <p><em>«Здесь юрист не выключается. Наоборот — теперь у него уже есть материал, который можно быстро проверить, исправить и дотянуть под конкретную позицию.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">4</span> Сравнение с ручным режимом — 45–60 секунд</h3>
+            <p><em>«Если руками это обычно стартует долго — сбор структуры, формулировок, черновой логики — здесь этот слой уже срезан. Вопрос не в том, идеально ли с первого раза. Вопрос в том, сколько времени мы экономим на старте.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">5</span> Снять главный страх — 30–45 секунд</h3>
+            <p><em>«Самый нормальный страх: „а для суда это вообще безопасно?" Ответ простой: как автопилот без проверки — нет. Как черновик-ускоритель под контролем юриста — да, в этом и смысл.»</em></p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">6</span> Закрытие на тест — 30–45 секунд</h3>
+            <p><em>«Предлагаю не обсуждать это теоретически. Давайте возьмём один ваш реальный типовой кейс и посмотрим, сколько времени Alfred сэкономит на первой версии документа. Если выгоды не будет — значит, не ваш инструмент.»</em></p>
+        </div>
+
+        <h2>Чего НЕ делать</h2>
+        <div class="anti">
+            <strong>✗ «Смотрите, он всё делает сам»</strong>
+            <p>Ломает доверие. Юрист сразу начинает думать, что его пытаются заменить.</p>
+        </div>
+        <div class="anti">
+            <strong>✗ «Это уже можно сразу отправлять»</strong>
+            <p>Завышенные ожидания. Alfred — это черновик, не финальный документ.</p>
+        </div>
+        <div class="anti">
+            <strong>✗ Уходить в техно-мусор про модели и токены</strong>
+            <p>Юристу это не интересно. Ему важна практическая польза.</p>
+        </div>
+        <div class="anti">
+            <strong>✗ Растягивать демо дольше 7 минут</strong>
+            <p>Внимание уходит. Лучше коротко и по делу.</p>
+        </div>
+
+        <div class="cta">
+            <p>Давайте возьмём одно реальное дело и посмотрим, сколько времени Alfred сэкономит на первой версии документа.</p>
+        </div>
+
+        <div class="footer">
+            <p>Alfred — проект Chronos</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт — Alfred</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f1115; }
+        .subtitle { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0f1115; }
+        h3 { font-size: 1.2rem; margin: 20px 0 10px; color: #0f1115; }
+        p { margin-bottom: 15px; }
+        .branch { background: #fff; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #eee; }
+        .branch.interested { border-left: 4px solid #4caf50; }
+        .branch.hesitant { border-left: 4px solid #ff9800; }
+        .branch.later { border-left: 4px solid #2196f3; }
+        .branch strong { display: block; font-size: 1.1rem; margin-bottom: 10px; }
+        .message { background: #f5f5f5; padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic; }
+        .highlight { background: linear-gradient(135deg, #0f1115 0%, #2d3436 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; }
+        .highlight p { color: #fff; font-size: 1.2rem; margin: 0; }
+        .anti { background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.9rem; }
+        nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 30px; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #0f1115; }
+        nav a.active { color: #0f1115; border-bottom: 2px solid #0f1115; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/demo.html">Демо</a></li>
+            <li><a href="/objections.html">Возражения</a></li>
+            <li><a href="/follow-up.html" class="active">Контакт</a></li>
+            <li><a href="/how-it-works.html">Как это работает</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Контакт</h1>
+        <p class="subtitle">Как вести разговор после демо</p>
+
+        <h2>Правило</h2>
+        <p>Follow-up должен делать только одну вещь:</p>
+        <ul>
+            <li>либо закрепить интерес,</li>
+            <li>либо снять остаточное сомнение,</li>
+            <li>либо вернуть разговор в конкретику.</li>
+        </ul>
+        <p>Если сообщение превращается в длинную простыню — оно работает хуже.</p>
+
+        <h2>Ветка 1 — Interested</h2>
+        <div class="branch interested">
+            <strong>Когда использовать</strong>
+            <p>Человеку демо зашло, он видит пользу, готов обсуждать тест или следующий шаг.</p>
+            <div class="message">
+                <strong>Short version:</strong><br>
+                «Спасибо за разговор. Мне кажется, тут лучший следующий шаг — не обсуждать Alfred абстрактно, а взять один ваш реальный типовой кейс и посмотреть, сколько времени он экономит на первой версии документа.»
+            </div>
+            <div class="message">
+                <strong>Stronger version:</strong><br>
+                «Спасибо за разговор. Предлагаю следующий практичный шаг: берём один ваш реальный кейс, Alfred собирает первую рабочую версию, и мы сразу смотрим не "нравится / не нравится", а есть ли реальная экономия времени. Если пользы нет — честно фиксируем это.»
+            </div>
+            <p><strong>CTA:</strong> назначить тест на 1 кейсе, согласовать тип документа, попросить безопасный пример.</p>
+        </div>
+
+        <h2>Ветка 2 — Hesitant</h2>
+        <div class="branch hesitant">
+            <strong>Когда использовать</strong>
+            <p>Человек не отказывается, но осторожничает, звучат возражения о качестве, безопасности, сырости. Интерес есть, но доверия пока не хватает.</p>
+            <div class="message">
+                <strong>Short version:</strong><br>
+                «Это нормальная реакция. Я бы тоже не делала выводы по одной презентации. Поэтому самый честный способ понять пользу — проверить Alfred на одном не критичном, но реальном кейсе из практики.»
+            </div>
+            <div class="message">
+                <strong>Stronger version:</strong><br>
+                «Скепсис тут нормален — рынок реально полон сырых AI-демок. Поэтому я и не предлагаю верить на слово. Лучше взять один безопасный типовой документ и посмотреть, помогает ли Alfred быстрее собрать первую версию без лишней ручной рутины.»
+            </div>
+            <p><strong>CTA:</strong> предложить не критичный кейс, снять ожидание «идеально с первого раза», перевести разговор из теории в проверку.</p>
+        </div>
+
+        <h2>Ветка 3 — No-time / Later</h2>
+        <div class="branch later">
+            <strong>Когда использовать</strong>
+            <p>Человеку сейчас не до этого, интерес есть, но окно маленькое. Нужно не потерять контакт и не выглядеть навязчиво.</p>
+            <div class="message">
+                <strong>Short version:</strong><br>
+                «Поняла) Тогда не буду грузить. Когда будет окно, самый быстрый способ проверить пользу — взять один типовой документ и за 5–7 минут посмотреть, сокращает Alfred первую итерацию или нет.»
+            </div>
+            <div class="message">
+                <strong>Stronger version:</strong><br>
+                «Поняла, не буду сейчас перегружать. Когда появится нормальное окно, можно очень коротко вернуться к этому: один типовой кейс, 5–7 минут показа, и сразу видно, есть ли тут реальная польза по времени.»
+            </div>
+            <p><strong>CTA:</strong> оставить лёгкий next step без давления, сохранить рамку «короткая проверка на одном кейсе».</p>
+        </div>
+
+        <h2>Универсальный короткий ping (через 1–3 дня)</h2>
+        <div class="message">
+            «Возвращаюсь коротко к Alfred. Если захотите, можем без долгих созвонов просто проверить его на одном вашем типовом документе и быстро понять, есть ли реальная экономия времени на первой версии.»
+        </div>
+
+        <h2>Если человек спрашивает «что именно прислать?»</h2>
+        <p>«Лучше всего подойдёт один типовой кейс: жалоба, претензия, ходатайство, иск или просто материалы, по которым обычно долго собирается первая версия текста.»</p>
+
+        <h2>Если человек спрашивает «а если результат будет слабый?»</h2>
+        <p>«Тогда это тоже полезный итог. Смысл теста как раз в том, чтобы быстро понять на практике, есть там реальная выгода или нет, а не продавать это вслепую.»</p>
+
+        <h2>Анти-паттерны</h2>
+        <div class="anti">
+            <strong>✗ «Ну что, берёте?»</strong> — слишком раннее давление
+        </div>
+        <div class="anti">
+            <strong>✗ «Это революция для юристов»</strong> — завышенные ожидания
+        </div>
+        <div class="anti">
+            <strong>✗ «Аналогов нет»</strong> — неправда
+        </div>
+        <div class="anti">
+            <strong>✗ «AI уже лучше человека»</strong> — ломает доверие
+        </div>
+        <div class="anti">
+            <strong>✗ Длинные лекции про модели и инфраструктуру</strong> — не релевантно
+        </div>
+
+        <h2>Лучший принцип закрытия</h2>
+        <div class="highlight">
+            <p>Каждый follow-up должен вести не к «подумайте», а к одному маленькому проверяемому следующему шагу.</p>
+        </div>
+
+        <div class="footer">
+            <p>Alfred — проект Chronos</p>
+        </div>
+    </div>
+</body>
+</html>
