@@ -378,6 +378,10 @@ ul.clean li::before {
 }
 .copy-btn {
   justify-self: start;
+  display: inline-flex;
+  min-width: 160px;
+  margin-top: 12px;
+  cursor: pointer;
 }
 .footer {
   padding: 34px 0 54px;
