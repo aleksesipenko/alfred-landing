@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оффер — Alfred</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f1115; }
+        .subtitle { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0f1115; }
+        p { margin-bottom: 15px; }
+        .card { background: #fff; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #eee; }
+        .highlight { background: linear-gradient(135deg, #0f1115 0%, #2d3436 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; }
+        .highlight p { color: #fff; font-size: 1.2rem; margin: 0; }
+        ul { margin: 15px 0 15px 20px; }
+        li { margin: 8px 0; }
+        .cta { background: #0f1115; color: white; padding: 20px 30px; border-radius: 8px; text-align: center; margin: 40px 0; }
+        .cta p { margin: 0; font-size: 1.1rem; }
+        nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 30px; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #0f1115; }
+        nav a.active { color: #0f1115; border-bottom: 2px solid #0f1115; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/demo.html">Демо</a></li>
+            <li><a href="/objections.html">Возражения</a></li>
+            <li><a href="/follow-up.html">Контакт</a></li>
+            <li><a href="/offer.html" class="active">Оффер</a></li>
+            <li><a href="/how-it-works.html">Как это работает</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Оффер</h1>
+        <p class="subtitle">Что именно Alfred обещает и на чём держится ценность</p>
+
+        <div class="highlight">
+            <p>Не «AI вместо юриста», а ускорение первой версии документа и разборов материалов там, где сейчас сгорают часы рутины.</p>
+        </div>
+
+        <div class="card">
+            <h2>Короткий оффер</h2>
+            <p><strong>Alfred помогает юристу быстрее собрать первую рабочую версию документа и тратить меньше времени на рутинную подготовку, сохраняя полный контроль у специалиста.</strong></p>
+        </div>
+
+        <div class="card">
+            <h2>Для кого</h2>
+            <ul>
+                <li>частнопрактикующие адвокаты</li>
+                <li>юристы с большим объёмом однотипной документной работы</li>
+                <li>практика, где много времени уходит на старт документа, структуру и первичный разбор материалов</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Что именно получает человек</h2>
+            <ul>
+                <li>быстрее старт документа без пустого листа</li>
+                <li>первую структуру и черновой каркас за минуты</li>
+                <li>меньше ручной рутины до экспертной правки</li>
+                <li>больше времени на стратегию, проверку и позицию по делу</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>На чём держится ценность</h2>
+            <p>Во многих юридических задачах дороже всего не финальная правка, а вход в документ:</p>
+            <ul>
+                <li>собрать структуру</li>
+                <li>разложить материалы</li>
+                <li>подобрать формулировки</li>
+                <li>сделать первый драфт</li>
+            </ul>
+            <p>Alfred сокращает именно этот слой.</p>
+        </div>
+
+        <div class="card">
+            <h2>Что Alfred не обещает</h2>
+            <ul>
+                <li>не обещает заменить юриста</li>
+                <li>не обещает документ без проверки специалистом</li>
+                <li>не обещает «магическую кнопку» без ответственности</li>
+            </ul>
+            <p>И это хорошо: иначе это была бы хрупкая демка, а не рабочий инструмент.</p>
+        </div>
+
+        <div class="card">
+            <h2>Самый честный способ проверить</h2>
+            <p>Не спорить теоретически, а взять один типовой реальный кейс и посмотреть:</p>
+            <ul>
+                <li>как быстро появляется первая версия</li>
+                <li>сколько ручной рутины срезается</li>
+                <li>есть ли реальная экономия времени</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <p>Лучший next step: один типовой документ из практики и короткий тест Alfred на реальном кейсе.</p>
+        </div>
+
+        <div class="footer">
+            <p>Alfred — проект Chronos</p>
+        </div>
+    </div>
+</body>
+</html>
