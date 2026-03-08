@@ -1,106 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfred — AI-ассистент для юриста</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f1115; }
-        .subtitle { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
-        h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0f1115; }
-        p { margin-bottom: 15px; }
-        .value { background: #fff; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #eee; }
-        .highlight { background: linear-gradient(135deg, #0f1115 0%, #2d3436 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; }
-        .highlight p { color: #fff; font-size: 1.2rem; margin: 0; }
-        .objection { background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 15px 0; }
-        .objection strong { display: block; margin-bottom: 8px; }
-        .cta { background: #0f1115; color: white; padding: 20px 30px; border-radius: 8px; text-align: center; margin: 40px 0; }
-        .cta p { margin: 0; font-size: 1.1rem; }
-        ul { margin: 15px 0 15px 20px; }
-        li { margin: 8px 0; }
-        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.9rem; }
-        nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 30px; }
-        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.2s; }
-        nav a:hover { color: #0f1115; }
-        nav a.active { color: #0f1115; border-bottom: 2px solid #0f1115; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alfred — мобильный AI legal copilot для юридической рутины. Полный гайд, сценарии работы, FAQ и отдельный marketing-раздел.">
+  <title>Alfred — гид по работе с ассистентом</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">A</span>
+          <span>Alfred <small>AI legal copilot</small></span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Открыть меню">Меню</button>
+        <nav class="site-nav" data-nav>
+          <ul>
             <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="guide.html">Гайд</a></li>
+            <li><a href="workflow.html">Как работать</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="demo.html">Демо</a></li>
-            <li><a href="objections.html">Возражения</a></li>
-            <li><a href="follow-up.html">Контакт</a></li>
-            <li><a href="offer.html">Оффер</a></li>
-            <li><a href="how-it-works.html">Как это работает</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>Alfred</h1>
-        <p class="subtitle">AI-ассистент для юридической рутины</p>
-        
-        <div class="value">
-            <h2>Что он делает</h2>
-            <ul>
-                <li>Готовит черновики юридических документов за минуты</li>
-                <li>Помогает разобрать присланные файлы и вытащить суть</li>
-                <li>Сокращает время на рутину: от поиска формулировок до первой версии текста</li>
-                <li>Работает как ускоритель юриста, а не как «замена экспертизы»</li>
+            <li><a href="marketing.html">Marketing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-card hero-card--dark">
+            <div class="eyebrow">Версия для телефона, без техномусора</div>
+            <h1>Alfred помогает юристу быстрее начинать работу по делу.</h1>
+            <p class="lead">Это не “замена юриста”, а аккуратный ассистент для первой версии документа, разбора материалов, вопросов клиенту и ускорения рутины.</p>
+            <div class="tag-row">
+              <span class="tag">mobile-first</span>
+              <span class="tag">разные страницы</span>
+              <span class="tag">интерактивный guide</span>
+              <span class="tag">marketing отдельно</span>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="guide.html">Открыть полный гайд</a>
+              <a class="btn btn-secondary" href="workflow.html">Посмотреть процесс</a>
+            </div>
+          </div>
+
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="eyebrow">Если открыть с телефона</div>
+              <h3>Что здесь внутри</h3>
+              <ul class="clean">
+                <li>как объяснить Alfred человеку без AI-бэкграунда</li>
+                <li>что писать ему в первом сообщении</li>
+                <li>какие документы и фото отправлять</li>
+                <li>как строится полный процесс по делу</li>
+                <li>какие ожидания нормальные, а какие нет</li>
+              </ul>
+              <hr class="soft">
+              <p class="small">Маркетинговая часть вынесена отдельно, чтобы не мешать рабочему onboarding.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container grid-3">
+          <div class="metric">
+            <strong>1</strong>
+            <p>главная мысль сайта: Alfred экономит время на старте, а не обещает магию.</p>
+          </div>
+          <div class="metric">
+            <strong>5–7 мин</strong>
+            <p>достаточно, чтобы показать демо и понять, полезен ли инструмент на типовом кейсе.</p>
+          </div>
+          <div class="metric">
+            <strong>100%</strong>
+            <p>финальный контроль и ответственность остаются у юриста.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card">
+            <div class="eyebrow">Для мамы Димы — коротко и по-человечески</div>
+            <h2>Что такое Alfred</h2>
+            <p>Alfred — это AI-помощник, который помогает быстрее собрать первую рабочую версию текста, структурировать материалы дела и не тратить кучу часов на одно и то же каждый раз.</p>
+            <div class="grid-3">
+              <div class="feature-card">
+                <h3>Что даёт</h3>
+                <ul class="clean">
+                  <li>быстрый старт вместо пустого листа</li>
+                  <li>черновик документа за минуты</li>
+                  <li>разбор присланных файлов и сути дела</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h3>Чего не обещает</h3>
+                <ul class="clean">
+                  <li>не заменяет профессионала</li>
+                  <li>не отправляет всё сам без проверки</li>
+                  <li>не убирает необходимость думать</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h3>Когда полезнее всего</h3>
+                <ul class="clean">
+                  <li>типовые жалобы, претензии, иски</li>
+                  <li>разбор входящих документов</li>
+                  <li>полный процесс по делу под контролем юриста</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" data-tabs>
+          <div class="eyebrow">Быстрый обзор по ролям</div>
+          <h2>Кому что открывать первым</h2>
+          <div class="tabs">
+            <button class="tab-btn active" data-tab-btn="operator">Если вы будете работать с Alfred</button>
+            <button class="tab-btn" data-tab-btn="owner">Если вы показываете Alfred другому человеку</button>
+            <button class="tab-btn" data-tab-btn="sales">Если нужен маркетинговый угол</button>
+          </div>
+          <div class="tab-panel active" data-tab-panel="operator">
+            <h3>Стартовый путь</h3>
+            <ul class="clean">
+              <li>откройте <a href="guide.html">полный гайд</a></li>
+              <li>потом страницу <a href="workflow.html">как работать по делу</a></li>
+              <li>если что-то непонятно — <a href="faq.html">FAQ</a></li>
             </ul>
+          </div>
+          <div class="tab-panel" data-tab-panel="owner">
+            <h3>Что показать в первую очередь</h3>
+            <ul class="clean">
+              <li>страницу <a href="demo.html">демо</a> — как объяснять ценность быстро</li>
+              <li>страницу <a href="faq.html">FAQ</a> — чтобы снять страхи и ожидания</li>
+              <li>страницу <a href="workflow.html">процесс</a> — чтобы было ясно, как всё идёт от задачи к результату</li>
+            </ul>
+          </div>
+          <div class="tab-panel" data-tab-panel="sales">
+            <h3>Отдельный маркетинговый раздел</h3>
+            <p>Мы вынесли marketing отдельно, чтобы не мешать обычному рабочему onboarding.</p>
+            <div class="btn-row">
+              <a class="btn btn-soft" href="marketing.html">Открыть marketing</a>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <h2>Для кого</h2>
-        <ul>
-            <li>Частнопрактикующие адвокаты</li>
-            <li>Юристы с большим объёмом однотипной документной работы</li>
-            <li>Практика, где время на черновики и разбор документов съедает день</li>
-        </ul>
-
-        <div class="highlight">
-            <p>Меньше ручной рутины — больше времени на стратегию, клиента и деньги.</p>
+      <section class="section">
+        <div class="container two-col">
+          <div class="cta-panel">
+            <div class="eyebrow">Самый полезный маршрут</div>
+            <h2>Если нужно начать уже сегодня</h2>
+            <div class="process-steps">
+              <div class="step-card"><div class="step-num">1</div><div><h3>Прочитать гайд</h3><p>Понять рамку: Alfred ускоряет первую версию, а не заменяет специалиста.</p></div></div>
+              <div class="step-card"><div class="step-num">2</div><div><h3>Взять один реальный кейс</h3><p>Не самый сложный и не самый рискованный. Лучше типовую рабочую задачу.</p></div></div>
+              <div class="step-card"><div class="step-num">3</div><div><h3>Прогнать полный процесс</h3><p>Посмотреть, где он реально экономит время, а где нужен ручной контроль.</p></div></div>
+            </div>
+          </div>
+          <div class="cta-panel cta-panel--dark">
+            <div class="eyebrow">Правильная формула</div>
+            <h2>Как объяснять Alfred одним предложением</h2>
+            <p><strong>Alfred — это AI-ассистент для юридической рутины, который помогает быстрее собрать первую версию документа и разобрать материалы, сохраняя полный контроль у человека.</strong></p>
+            <div class="btn-row">
+              <a class="btn btn-secondary" href="guide.html#first-message">Что написать ему первым сообщением</a>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <h2>Почему это может окупаться</h2>
-        <p><strong>По времени:</strong> Billable time у многих юристов проседает, потому что слишком много часов уходит в неоплачиваемую подготовку. Alfred срезает именно этот слой.</p>
-        <p><strong>По деньгам (типичные чеки по Казани):</strong></p>
-        <ul>
-            <li>Консультация: 1 500–5 000 ₽</li>
-            <li>Иск / жалоба / претензия: от 5 000 ₽</li>
-            <li>Представительство: 3 000–35 000 ₽</li>
-        </ul>
-
-        <h2>Позиционирование без bullshit</h2>
-        <p><strong>Alfred не заменяет юриста.</strong> Он ускоряет подготовку черновика и снимает рутинную нагрузку.</p>
-        <p style="font-size: 1.2rem; font-style: italic;">Черновик за минуты — экспертиза остаётся у вас.</p>
-
-        <h2>Возражения</h2>
-        <div class="objection">
-            <strong>«AI пишет слишком общо»</strong>
-            <p>Да, если давать ему пустой промпт. Alfred ценен там, где есть шаблоны, контекст и конкретная задача.</p>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Alfred</strong>
+          <p>Интерактивный гид по работе с ассистентом + отдельный marketing-раздел. Собрано так, чтобы это удобно открывалось с телефона.</p>
         </div>
-        <div class="objection">
-            <strong>«Для суда опасно»</strong>
-            <p>Поэтому он и позиционируется как черновик-ускоритель, а не как автопилот без проверки.</p>
+        <div>
+          <div class="pill-row">
+            <span class="pill">Guide</span>
+            <span class="pill">Workflow</span>
+            <span class="pill">FAQ</span>
+            <span class="pill">Marketing</span>
+          </div>
         </div>
-        <div class="objection">
-            <strong>«AI не заменит юриста»</strong>
-            <p>И не должен. Цель — чтобы юрист не тратил лишние часы на механику.</p>
-        </div>
-
-        <div class="cta">
-            <p>Давайте возьмём одно реальное дело и посмотрим, сколько времени Alfred сэкономит на первой версии документа.</p>
-        </div>
-
-        <p style="text-align: center; font-size: 1.1rem;"><strong>Alfred — это AI-ассистент для юриста, который за минуты собирает первую версию документа и помогает тратить меньше времени на рутину, сохраняя полный контроль у специалиста.</strong></p>
-
-        <div class="footer">
-            <p>Alfred — проект Chronos</p>
-        </div>
-    </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/app.js"></script>
 </body>
 </html>
